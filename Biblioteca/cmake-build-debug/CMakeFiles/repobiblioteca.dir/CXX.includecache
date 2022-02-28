@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/AccountDatabase.h
+unordered_map
+-
+UserAccount.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/UserAccount.h
+string
+-
+fstream
+-
+
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/Book.h
+iostream
+-
+string
+-
+
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/Engine.cpp
+iostream
+-
+fstream
+-
+AccountDatabase.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/AccountDatabase.h
+Book.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/Book.h
+UserAccount.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/UserAccount.h
+UserEngine.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/UserEngine.h
+Engine.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/Engine.h
+ctime
+-
+
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/Engine.h
+Book.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/Book.h
+UserAccount.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/UserAccount.h
+
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/UserAccount.h
+string
+-
+iostream
+-
+Book.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/Book.h
+set
+-
+vector
+-
+
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/UserEngine.h
+UserAccount.h
+/Users/sergiu/Documents/PAC/repobiblioteca/Proiect Bibloteca/Proiectu Bibloteca/Proiectu_Bibloteca/UserAccount.h
+

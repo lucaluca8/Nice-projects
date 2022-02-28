@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Client">
+      <UniqueIdentifier>{bd58b8f9-4df1-453c-9ad3-1bb1b3986315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client">
+      <UniqueIdentifier>{48a6d864-8689-4971-b30f-8be95472c8e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Client\Backend">
+      <UniqueIdentifier>{2a262b5c-54b3-4333-ae98-8afb6c3b0e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client\Backend">
+      <UniqueIdentifier>{fbd9b785-abe6-42f9-9160-d089c502b948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client\FrontEnd">
+      <UniqueIdentifier>{630416cf-706d-4c89-8b76-f10323099b62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Client\FrontEnd">
+      <UniqueIdentifier>{241dcb82-4a71-4e75-9d7a-b78180597fdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\DataBases">
+      <UniqueIdentifier>{e6ed3906-d86c-4d9b-a605-d783c82d5f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Communication">
+      <UniqueIdentifier>{87af6116-8a47-4fa6-8493-5087ab27e79b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Client\FrontEnd\Scenes">
+      <UniqueIdentifier>{d6de19d5-7b24-4e9c-aaf6-ce49ad02b243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client\FrontEnd\Scenes">
+      <UniqueIdentifier>{bea9e403-b886-4a87-8dc2-5912d8840513}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Proiectu_Bibloteca.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Book.cpp">
+      <Filter>Source Files\Client\Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files\Client\Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAccount.cpp">
+      <Filter>Source Files\Client\Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files\Client\FrontEnd</Filter>
+    </ClCompile>
+    <ClCompile Include="InputBox.cpp">
+      <Filter>Source Files\Client\FrontEnd</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginForm.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterForm.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAccountScene.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchBookScene.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="AvailableBooksScene.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowedBooks.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BookSection.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowedBookSection.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BookContent.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BorrowedSuccesfully.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorBorrowingBook.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterError.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountDeletedSuccessfully.cpp">
+      <Filter>Source Files\Client\FrontEnd\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Book.h">
+      <Filter>Header Files\Client\Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Header Files\Client\Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAccount.h">
+      <Filter>Header Files\Client\Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files\Client\FrontEnd</Filter>
+    </ClInclude>
+    <ClInclude Include="InputBox.h">
+      <Filter>Header Files\Client\FrontEnd</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginForm.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterForm.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAccountScene.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchBookScene.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="AvailableBooksScene.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowedBooks.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowedBookSection.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BorrowedSuccesfully.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorBorrowingBook.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BookSection.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BookContent.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterError.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountDeletedSuccessfully.h">
+      <Filter>Header Files\Client\FrontEnd\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="AccountDataBase.txt">
+      <Filter>Resource Files\DataBases</Filter>
+    </Text>
+    <Text Include="books.txt">
+      <Filter>Resource Files\DataBases</Filter>
+    </Text>
+    <Text Include="BurrowedTime.txt">
+      <Filter>Resource Files\DataBases</Filter>
+    </Text>
+    <Text Include="UsersBooks.txt">
+      <Filter>Resource Files\DataBases</Filter>
+    </Text>
+    <Text Include="commands.txt">
+      <Filter>Resource Files\Communication</Filter>
+    </Text>
+    <Text Include="LogIn.txt">
+      <Filter>Resource Files\Communication</Filter>
+    </Text>
+    <Text Include="order.txt">
+      <Filter>Resource Files\Communication</Filter>
+    </Text>
+    <Text Include="Requests.txt">
+      <Filter>Resource Files\Communication</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
