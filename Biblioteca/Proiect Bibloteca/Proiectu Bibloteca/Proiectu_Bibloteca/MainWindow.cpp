@@ -10,11 +10,12 @@ int MainWindow::display(std::unordered_map<int, Book> &avalabileBooks)
     Client c("commands.txt", "order.txt", "Requests.txt", "logIn.txt");
     std::string text = "Click Me";
     sf::Font font;
+    font.loadFromFile("arial.ttf");
     if (!font.loadFromFile("arial.ttf"))
     {
         std::cout << "Nu";
     }
-    font.loadFromFile("arial.ttf");
+    
 
     sf::Text titlu;
     titlu.setFont(font);
