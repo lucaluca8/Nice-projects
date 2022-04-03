@@ -1,0 +1,6 @@
+﻿Design Pattern
+Factory Design Pattern
+Threading
+Socket
+OOP
+SOLID

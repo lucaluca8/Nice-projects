@@ -1,0 +1,17 @@
+﻿<Window x:Class="Tema2.View.User"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2.View" 
+        mc:Ignorable="d"
+        Title="User" Width="400" Height="300">
+
+    <Grid>
+        <TextBlock Text="Introuduce your username" Margin="10,34,37,211" RenderTransformOrigin="0.508,0.371"></TextBlock>
+        <TextBox Margin="12,56,40,189" RenderTransformOrigin="0.5,0.5" Name="Input" ></TextBox>
+        <Button Name="AddImage" Content="AddImage" Click="AddImage_Click"  Margin="298,143,10,0" RenderTransformOrigin="1.236,-2.457" Height="28" VerticalAlignment="Top"></Button>
+        <TextBlock Margin="0,143,99,98" Name="Image"></TextBlock>
+        <Button Margin="85,209,99,23" RenderTransformOrigin="0.551,-0.127" Content="OK" Click="Button_Click"></Button>       
+    </Grid>
+</Window>
