@@ -1,0 +1,95 @@
+<section class="hero is-fullheight">
+    <section class="section">
+        <style>
+            h1 {text-align: center;}
+        </style>
+        <h1 class="title" style="color:darksalmon;">
+            Manage Anime
+        </h1>
+
+<nav class="level">
+    <div class="level-left">
+<div class="container">
+        <div name="anime">
+          <div class="field" style="color:rgb(245, 11, 11);">
+            Write the name of the anime here
+          </div>     
+          <input type="text" placeholder="Naruto" class="input" [(ngModel)]="anime.name">
+        </div>
+        <div class="container">
+          <div class="field" style="color:black;">
+            Rating
+          </div>
+          <input type="text" placeholder="7.94" class="input" [(ngModel)]="anime.rating">
+        </div>
+        <div class="container">
+            <div class="field" style="color:black;">
+              Number of episodes
+            </div>
+            <input type="text" placeholder="12" class="input" [(ngModel)]="anime.nr_episodes">
+        </div>
+        <div class="container">
+            <div class="field" style="color:black;">
+              Studio
+            </div>
+            <input type="text" placeholder="Mappa" class="input" [(ngModel)]="anime.studio">
+        </div>
+        <div class="container">
+            <div class="field" style="color:black;">
+              Genre
+            </div>
+            <input type="text" placeholder="Slice of life" class="input" [(ngModel)]="anime.genre">
+        </div>
+        
+        <div class="container">
+            <div class="field" style="color:black;">
+              Upload an image around 300px x 400px
+            </div>
+            <input type="text" [(ngModel)]="anime.image" placeholder="https://i.pinimg.com/736x/c2/5f/3d/c25f3df820804060b22ff981bc29620f.jpg" class="input">
+        </div>
+</div>
+    </div>
+
+    <div class="level-right">
+        <div class="container">
+
+            <div class="container">
+                <div class="field" style="color:black;">
+                  Description
+                </div>
+                <textarea class="textarea" placeholder="e.g. Hello world" [(ngModel)]="anime.description"></textarea>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                    <span>
+                        <div>To add a new anime, fill in all the fields and press "Add anime"</div>
+                    </span>
+                    </div>
+                    <div class="content">
+                    <span>
+                        <div>To delete an anime, write the name and press "Delete anime"</div>
+                    </span>
+                    </div>
+                    <div class="content">
+                    <span>
+                        <div>To edit the data about an anime, write the name for identification and press "Get anime info". Change one or more fields and press "Update anime info"</div>
+                    </span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="button is-rounded is-danger" (click)="getAnimeInfo()">Get anime info</button>
+            <button class="button is-rounded is-danger" (click)="changeAnimeInfo()">Update info</button>
+            <button class="button is-rounded is-danger" (click)="addAnime()">Add anime</button>
+            <button class="button is-rounded is-danger" (click)="deleteAnime()">Delete anime</button>
+        </div>
+    </div>
+</nav>
+
+
+       
+        
+    </section>
+  </section>

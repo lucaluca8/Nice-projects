@@ -1,0 +1,83 @@
+<section class="hero is-fullheight">
+    <section class="section">
+        <style>
+            h1 {text-align: center;}
+        </style>
+        <h1 class="title" style="color:darksalmon;">
+            Manage account
+        </h1>
+
+
+<nav class="level">
+
+  <div class="level-left">
+<div class="container">
+        <div name="account" class="container">
+          <div class="field" style="color:rgb(245, 11, 11);">
+            Write the name associated with the account here
+          </div>     
+          <input type="text" placeholder="John Black" class="input"
+          [(ngModel)]="user.name"/>
+        </div>
+        <div class="container">
+          <div class="field" style="color:black;">
+            Username
+          </div>
+          <input type="text" placeholder="master32" class="input" [(ngModel)]="user.username">
+        </div>
+        <div class="container">
+            <div class="field" style="color:black;">
+              E-mail
+            </div>
+            <input type="text" placeholder="something@something.com" class="input"
+            [(ngModel)]="user.email">
+          </div>
+          <div class="container">
+            <div class="field" style="color:black;">
+              Password
+            </div>
+            <input type="password" placeholder="Terminator342" class="input"
+            required  [(ngModel)]="user.password">
+            
+          </div>
+        <div class="columns is-centered">         
+      </div>
+</div>
+  </div>
+
+  <div class="level-right">
+    <div class="container">
+
+      <div class="card">
+        <div class="card-content">
+            <div class="content">
+            <span>
+                <div>First, to manage an account, write the name associated with it and press "Get account info"</div>
+            </span>
+            </div>
+            <div class="content">
+            <span>
+                <div>To delete an account, press "Delete anime"</div>
+            </span>
+            </div>
+            <div class="content">
+            <span>
+                <div>To edit the data of an account, change one or more fields and press "Update account info"</div>
+            </span>
+            </div>
+        </div>
+    </div>
+
+      <button class="button is-rounded is-danger 
+      is-family-monospace" (click)="getAccountId()">Get account info</button>
+      <button class="button is-rounded is-danger 
+      is-family-monospace" (click)="changeAccountInfo()">Update account info</button>
+      <button class="button is-rounded is-danger 
+      is-family-monospace" (click)="deleteAccount()">Delete account</button>
+    
+    </div>
+  </div>
+
+</nav>
+    </section>
+  </section>

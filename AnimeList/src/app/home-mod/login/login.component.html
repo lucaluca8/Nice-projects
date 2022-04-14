@@ -1,0 +1,35 @@
+<section class="hero is-fullheight">
+  <section class="section">
+    <style>
+      h1{
+        text-align: center;
+      }
+    </style>
+    <h1 class="title" style="color:rgb(212, 171, 210)">LogIn</h1>
+  <div>
+  <div class="container">
+    <div class="field" style="color:white;">
+      Username
+    </div>
+    <input type="text" placeholder="Introduce your username here" class="input" [(ngModel)]="username">
+  </div>
+  <div class="container">
+    <div class="field" style="color:white;">
+      Password
+    </div>
+    <input type="password" placeholder="Introduce your password here" 
+    class="input" ng-hide="isChecked"  [(ngModel)]="password">
+  </div>
+</div>
+  <div class="columns is-centered">
+    <div class="column is-half"style="text-align:center;">
+        <button type="submit"  class="button is-medium is-fullwidth is-rounded is-family-monospace is-black"
+        style="background-color:rgb(212, 171, 210) ;" (click)="logInPressed()">LogIn</button>       
+  </div>
+  <label class="checkbox" style="color:rgb(0, 0, 0);">
+    <input type="checkbox" name="checkbox">
+   Remeber me
+  </label>  
+</div>
+</section>
+</section>

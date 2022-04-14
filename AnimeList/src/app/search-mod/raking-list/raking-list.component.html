@@ -1,0 +1,107 @@
+<section class="hero is-fullheight" [formGroup]="validatorForm">
+    <section class="section">
+        <style>
+            h1 {text-align: center;}
+        </style>
+        <h1 class="title" style="color:black;">
+            Anime Ranking
+        </h1>
+
+        <nav class="level">
+          <div class="level-left">
+
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span>Sort Table Content</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a class="dropdown-item" (click)="sortByName()">
+                    <p>Sort by name</p>
+                  </a>
+                  <a class="dropdown-item" (click)="sortByRating()">
+                    <p>Sort by rating</p>
+                  </a>
+                  <a class="dropdown-item" (click)="sortByPopularity()">
+                    <p>Sort by popularity</p>
+                  </a>
+                  <a class="dropdown-item" (click)="sortByStudio()">
+                    <p>Sort by studio</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        
+          <input type="text" placeholder="Search" class="input" formControlName="search"
+          [(ngModel)]="inputSb">
+          <button class="button is-warning is-light"
+          (click)="searchFunction()" routerLink="/search/{{ searchedId }}">Search</button>
+          <div id="e" class="help is-error" *ngIf="search.errors?.['searchValid']" style="text-align: center;">
+          Do not use special characters</div>
+
+          <div class="level-right"> 
+            <div class="level-item"></div>
+            <div class="level-item">
+              <button class="button is-warning is-light" routerLink="manage/anime">Manage Anime</button>
+              <button class="button is-warning is-light" routerLink="manage/account">Manage Account</button>
+            </div>
+          </div>
+        </nav>
+        
+
+        <div class="content">
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" *ngIf="animeList.length>0">
+            
+            <!-- No. Column -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef style="text-align: center;">No.</th>
+              <td mat-cell *matCellDef="let element" style="text-align: center;">{{ element.id }}</td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef style="text-align: center;">Name</th>
+              <td mat-cell *matCellDef="let element" style="text-align: center;">
+             <a routerLink="/search/{{ element.id }}">{{ element.name }}</a></td>
+            </ng-container>
+      
+            <!-- Rating Column -->
+            <ng-container matColumnDef="rating">
+              <th mat-header-cell *matHeaderCellDef style="text-align: center;">Rating</th>
+              <td mat-cell *matCellDef="let element" style="text-align: center;">{{ element.rating }}</td>
+            </ng-container>
+    
+            <!-- Nr of episodes Column -->
+            <ng-container matColumnDef="nr_episodes">
+              <th mat-header-cell *matHeaderCellDef style="text-align: center;">Number of episodes</th>
+              <td mat-cell *matCellDef="let element" style="text-align: center;">{{ element.nr_episodes }}</td>
+            </ng-container>
+      
+            <!-- Studio Column -->
+            <ng-container matColumnDef="studio">
+              <th mat-header-cell *matHeaderCellDef style="text-align: center;">Studio</th>
+              <td mat-cell *matCellDef="let element" style="text-align: center;">{{ element.studio }}</td>
+            </ng-container>
+
+            <!-- Genre Column -->
+            <ng-container matColumnDef="genre">
+              <th mat-header-cell *matHeaderCellDef style="text-align: center;">Genre</th>
+              <td mat-cell *matCellDef="let element" style="text-align: center;">{{ element.genre }}</td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+        </div>
+    
+    </section>
+  </section>
+  

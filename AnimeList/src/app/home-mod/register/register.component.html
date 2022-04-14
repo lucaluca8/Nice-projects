@@ -1,0 +1,76 @@
+<section class="hero is-fullheight" [formGroup]="validatorForm">
+  <section class="section is-fullheight">
+      <style>
+          h1 {text-align: center;}
+      </style>
+      <h1 class="title" style="color:darksalmon;">
+          Register
+      </h1>
+      <div name="name" class="container">
+        <div class="field" style="color:white;">
+          Name
+        </div>
+        <input type="text" placeholder="John Black" class="input"
+        formControlName = "name"  required [(ngModel)]="user.name"  />
+        <div class="help is-error" *ngIf="name.errors?.['nameValid']">
+          Your name is too long
+      </div>
+      <div class="help is-error" *ngIf="name.errors?.['specialValid']">
+        Your name should not contain special characters
+    </div>
+      </div>
+      <div class="container">
+        <div class="field" style="color:white;">
+          Username
+        </div>
+        <input type="text" placeholder="master32" class="input"
+        formControlName = "username"  [(ngModel)]="user.username"
+        required>
+        <div class="help is-error" *ngIf="username.errors?.['nameValid']">
+          Your username is too long
+      </div>
+      <div class="help is-error" *ngIf="username.errors?.['specialValid']">
+        Your username should not contain special characters
+    </div>
+      </div>
+      <div class="container">
+          <div class="field" style="color:white;">
+            E-mail
+          </div>
+          <input type="text" placeholder="anything.@something.com" class="input"
+          formControlName="email" [(ngModel)]="user.email">
+          <div class="help is-error" *ngIf="email.errors?.['emailValid']"
+          required>
+            Your email is invalid
+        </div>
+        </div>
+        <div class="container">
+          <div class="field" style="color:white;">
+            Password
+          </div>
+          <input type="password" placeholder="Terminator342" class="input"
+          formControlName="password" [(ngModel)]="user.password"
+          required>
+      <div class="help is-error" *ngIf="password.errors?.['passContValid']">
+        Your password should contain a number and an upper case letter
+        and cannot contain special characters
+    </div>
+    <div class="container">
+      <div class="field" style="color:white;">
+        Security question: What is your first pet name?
+      </div>
+      <input type="text" placeholder="Your answer" class="input" name="security" 
+      formControlName = "security"  [(ngModel)]="user.security" required>
+      <div class="help is-error" *ngIf="security.errors?.['specialValid']">
+        Your security answer should not contain special characters
+    </div>
+    </div>
+        </div>
+      <div class="columns is-centered">         
+    </div>
+  <div class="hero-body">
+    <button class="button is-medium is-fullwidth is-rounded is-danger is-family-monospace is-black"
+    (click)="registerButton()">Register</button>
+  </div>
+  </section>
+</section>

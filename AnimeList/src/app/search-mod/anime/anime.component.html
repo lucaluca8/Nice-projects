@@ -1,0 +1,54 @@
+<div class="container" *ngIf="anime">
+<!-- level: title and status on top right -->
+    <nav class="level">
+        <div class="level-left">
+            <p class="title">{{anime.name}}</p>
+        </div>
+
+        <div class="level-right">
+            <div class="level-item has-text-centered">
+                <div>
+                <p class="heading">Popularity</p>
+                <p class="title">#{{anime.id}}</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                <p class="heading">Rating</p>
+                <p class="title">{{anime.rating}}</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                <p class="heading">Number of Episodes</p>
+                <p class="title">{{anime.nr_episodes}}</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- level: photo and about section -->
+    <nav class="level">
+        <img [src]="anime.image">
+        <div class="card">
+            <p class="card-header-title ">
+                About
+            </p>
+
+            <div class="card-content">
+                <div class="content">
+                <span>
+                    <div>Genre: {{anime.genre}}</div>
+                </span>
+                </div>
+            
+                <span>
+                    <div>Studio: {{anime.studio}}</div>
+                </span>
+            </div>
+
+            <p class="card-footer-item has-text-centered">
+                <span>Description: {{anime.description}}</span>
+            </p>
+        </div>
+    </nav>
+</div>
